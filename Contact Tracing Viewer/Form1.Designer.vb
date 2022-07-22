@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_read = New System.Windows.Forms.Button()
-        Me.btn_import = New System.Windows.Forms.Button()
         Me.btn_reset = New System.Windows.Forms.Button()
         Me.display = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
@@ -33,14 +32,15 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(78, 21)
+        Me.Label1.Location = New System.Drawing.Point(28, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(340, 46)
+        Me.Label1.Size = New System.Drawing.Size(451, 46)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Contact Tracing Form"
+        Me.Label1.Text = "Contact Tracing Form Viewer"
         '
         'btn_read
         '
+        Me.btn_read.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_read.Location = New System.Drawing.Point(101, 79)
         Me.btn_read.Name = "btn_read"
         Me.btn_read.Size = New System.Drawing.Size(94, 29)
@@ -48,17 +48,9 @@ Partial Class Form1
         Me.btn_read.Text = "Read"
         Me.btn_read.UseVisualStyleBackColor = True
         '
-        'btn_import
-        '
-        Me.btn_import.Location = New System.Drawing.Point(201, 79)
-        Me.btn_import.Name = "btn_import"
-        Me.btn_import.Size = New System.Drawing.Size(94, 29)
-        Me.btn_import.TabIndex = 2
-        Me.btn_import.Text = "Import"
-        Me.btn_import.UseVisualStyleBackColor = True
-        '
         'btn_reset
         '
+        Me.btn_reset.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_reset.Location = New System.Drawing.Point(301, 79)
         Me.btn_reset.Name = "btn_reset"
         Me.btn_reset.Size = New System.Drawing.Size(94, 29)
@@ -78,10 +70,10 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(501, 566)
         Me.Controls.Add(Me.display)
         Me.Controls.Add(Me.btn_reset)
-        Me.Controls.Add(Me.btn_import)
         Me.Controls.Add(Me.btn_read)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
@@ -93,7 +85,6 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btn_read As Button
-    Friend WithEvents btn_import As Button
     Friend WithEvents btn_reset As Button
     Friend WithEvents display As RichTextBox
 End Class
